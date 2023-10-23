@@ -4,8 +4,6 @@
 // 	.catch((err) => console.log(`Boo. Promise rejected with response:  ${err}`));
 
 const main = async () => {
-
-
 	try {
 		const result = await new Promise((resolve, reject) => {
 			if (Math.random() < 0.5) {
@@ -18,7 +16,6 @@ const main = async () => {
 	} catch (err) {
 		console.log(`Boo. Promise rejected with response:  ${err}`);
 	}
-
 }
 const numberOfPromises = 10;
 console.log(`Testing with ${numberOfPromises} promises`);
